@@ -10,7 +10,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <nav>
           <ul style={{ listStyle: "none", margin: "auto", padding: "0" }}>
             <li style={{ margin: "10px", display: "inline-block" }}>
