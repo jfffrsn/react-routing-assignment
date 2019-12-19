@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 import Courses from "./containers/Courses/Courses";
 import Users from "./containers/Users/Users";
@@ -37,6 +37,17 @@ class App extends Component {
             page)
           </li>
         </ol>
+        <nav>
+          <ul style={{ listStyle: "none", margin: "auto", padding: "0" }}>
+            <li style={{ margin: "10px", display: "inline-block" }}>
+              <Link to="/courses">Courses</Link>
+            </li>
+            <li style={{ margin: "10px", display: "inline-block" }}>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
+
         <Route path="/courses" component={Courses} />
         <Route path="/users" component={Users} />
       </div>
